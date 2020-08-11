@@ -18,7 +18,9 @@ createFish = event => {
     image: this.imageRef.current.value,
     }
 
-    console.log(fish);
+    this.props.addFish(fish);
+    // refresh the form
+    event.currentTarget.reset();
 };
 
     render() {
